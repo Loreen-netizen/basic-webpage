@@ -6,60 +6,72 @@
     <title>my first web page</title>
     <style> 
     body{
-        background-color: rgb(245, 227, 230);
-        color: darkslategray;
         font-family: Tahoma, Geneva, Verdana, sans-serif;
         margin: auto;
+        padding: 2%;
         line-height: 1.5;
-        flex-wrap: wrap;
+        
     }
     .header {
-
-        padding : 2em;
-        text-align: center;
+margin: auto;
+border : 3px;
+border-color: lightslategrey;
+background-color:beige ;
+        padding : 1.5em;
         display : flex;
-        font-size: 150%;
-        font-weight: lighter;
+        justify-content: space-evenly;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
     }
    
         img {
-  border-radius: 10%;
-        display:flex;
+  border-radius: 10%;   
     
     }
+table{
+    width: 80%;
+}
+
    table, th, td{
-       border-width: 50%;
+     
        border-collapse : collapse;
-       justify-content: center;
-       align-self: center;
        margin : auto;
        border : 0.5px solid black;
    }
    .headings {
-       text-align: center;
-       margin: auto;
-       color :darkslategray;
-       font-size :50px;
-       padding: 3em;
+      
    }
    .clearfix {
   overflow: auto;
   zoom: 1;
 }
 .footer{
-    justify-content: center;
-    display: flex;
-}
-.section1{
-    display:flex;
-    justify-content: left;
-
-}
-.p {
-    display: flex;
-  align-items: center;
-  justify-content: space-around;
+    padding: 3%;
+    marging: 4em;
+    
    
+}
+
+p {
+  float: right;
+  margin: auto;
+  padding: 3px;
+  border : solid 1px beige;
+ 
+   
+}
+.historicplacescontainer{
+    display: flex;
+    flex-wrap : wrap;
+}
+.section3{
+    display: flex;
+    background-color: rgb(250, 224, 228);
+}
+.section2{
+    background-color: rgb(250, 224, 228);
+}
+.my-images{
+    flex-direction:center;
 }
 
     </style>
@@ -70,16 +82,21 @@
     <div class = "container" class = "clearfix">
  <header class = "header"> 
          <h1 >Yeukai Loreen Muusha</h1>
-         <div class = "img">
+         <div >
          <img src="./Webp.net-resizeimage.jpg", alt = "Photo Of Me At Table Mountain"> 
         </div>
      </header>
      <div class = content>
          <main>
-             <div class = "section3">
+          
             <section> 
-                <h4 class= "headings">Which City</h4>
-                <div class= "img">
+            <h2 class= "headings">Paris! </h2>
+             <div class = "section3">
+               
+        
+               
+                <h3 class= "heading1">The City I Would Like To Visit</h3>
+                <div class= my-images>
                     <img src =  "./paris.jpeg", alt = "A City I Would Love To Visit">
                
                </div>
@@ -90,7 +107,8 @@
         </div>
         <div class = "section2">
              <section>
-                <h4 class = "headings"> A Foreign Language </h4>
+                <h2 class = "headings"> French!  </h2>
+                <h3 class = "headings">A Language I Would Love To Learn. </h3>
 
                 <p class = "paragraphs"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Rerum adipisci ipsa dolorem optio vero dolores inventore odio totamillum quae atque
@@ -123,37 +141,44 @@
         </div>
            
            <div class = "section1">
-            <section>
-<h4 class ="headings"> Historic Places In Cape Town</h4>
-<div class= "img">
-    <img src =  "./Webp.net-resizeimage (1).jpg", alt = "Me At Historic Place">
 
-</div>
-<h3>Which Historic Place</h3>
+            <h2 class ="headings"> Historic Places In Cape Town</h2>
+
+                <div class="historicplacescontainer">
+
+<div class historic-section>
+<h3>District Six Museum </h3>
 <p class = "paragraphs"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
      Rerum adipisci ipsa dolorem optio vero dolores inventore odio totamillum quae atque
       molestias neque, aspernatur ab. Earum explicabo commodi rem ratione.</p>
       <div class= "img">
-        <img src =  "imagelocation", alt = "Me At Historic Place">
+        <img src =  "/home/loreen/projects/basic_website/Webp.net-resizeimage (1).jpg", alt = "Me At Historic Place">
     
     </div>
-    <h3>Which Historic Place</h3>
+</div>
+<div class historic-section>
+    <h3>City Hall </h3>
     <p class = "paragraphs"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
          Rerum adipisci ipsa dolorem optio vero dolores inventore odio totamillum quae atque
           molestias neque, aspernatur ab. Earum explicabo commodi rem ratione.</p>
 
           <div class= "img">
-            <img src =  "imagelocation", alt = "Me At Historic Place">
+            <img src =  "/home/loreen/projects/basic_website/Webp.net-resizeimage (2).jpg", alt = "Me At Historic Place">
         
         </div>
-        <h3>Which Historic Place</h3>
+    </div>
+    <div class historic-section>
+        <h3>Parliament of RSA</h3>
         <p class = "paragraphs"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
              Rerum adipisci ipsa dolorem optio vero dolores inventore odio totamillum quae atque
               molestias neque, aspernatur ab. Earum explicabo commodi rem ratione.</p>
-        
+              <div class= "img">
+                <img src =   "/home/loreen/projects/basic_website/Webp.net-resizeimage (3).jpg", alt = "Me At Historic Place">
+            </div>
+            </div>
 
                
-            </section>
+        </div>
         </div>
         </div>   
 
