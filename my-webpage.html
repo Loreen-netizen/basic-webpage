@@ -1,192 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my first web page</title>
-    <style> 
-    body{
-        font-family: Tahoma, Geneva, Verdana, sans-serif;
-        margin: auto;
-        padding: 2%;
-        line-height: 1.5;
-        
-    }
-    .header {
-margin: auto;
-border : 3px;
-border-color: lightslategrey;
-background-color:beige ;
-        padding : 1.5em;
-        display : flex;
-        justify-content: space-evenly;
-        font-family: Tahoma, Geneva, Verdana, sans-serif;
-    }
-   
+    <style>
+        .container {
+            font-family: ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            margin: auto;
+            padding: 2%;
+            /* line-height: 1.5; */
+        }
+
+        /* .clearfix {
+            overflow: auto;
+            zoom: 1;
+        } */
+
+        header {
+            margin: auto;
+            border: 2px solid bisque;
+            background-color: white;
+            padding: 2em;
+            display: flex;
+            font-family: ubuntu, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            justify-content: center;
+            line-height: 5em;
+
+
+        }
+
+        .tablemountain {
+            border-radius: 10%;
+        }
+
         img {
-  border-radius: 10%;   
-    
-    }
-table{
-    width: 80%;
-}
+            border-radius: 3%;
 
-   table, th, td{
-     
-       border-collapse : collapse;
-       margin : auto;
-       border : 0.5px solid black;
-   }
-   .headings {
-      
-   }
-   .clearfix {
-  overflow: auto;
-  zoom: 1;
-}
-.footer{
-    padding: 3%;
-    marging: 4em;
-    
-   
-}
+        }
 
-p {
-  float: right;
-  margin: auto;
-  padding: 3px;
-  border : solid 1px beige;
- 
-   
-}
-.historicplacescontainer{
-    display: flex;
-    flex-wrap : wrap;
-}
-.section3{
-    display: flex;
-    background-color: rgb(250, 224, 228);
-}
-.section2{
-    background-color: rgb(250, 224, 228);
-}
-.my-images{
-    flex-direction:center;
-}
+        table{
+            margin-top: 3%;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th,
+        td, tr { 
+            border: 1px solid rgb(160, 160, 155);
+            text-align: center;
+        }
 
+
+        p { margin: auto;
+            padding: 5%;
+            border: solid 1px beige;
+            font-size: 1em;
+            display: flex;
+            /* float: left; */
+
+
+        }
+        .list{ margin: auto;
+            padding: 5%;
+            border: solid 1px beige;
+            font-size: 1em;}
+
+        .historicplacescontainer {
+            display: flex;
+            flex-direction: row;
+            align-content: space-around;
+        
+        }
+
+        .section3 {
+            display: flex;
+            background-color: rgba(253, 253, 253, 0.356);
+        }
+
+        .section2 {
+
+            margin-top: 8px;
+
+        }
+
+        .heading-paris {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(250, 224, 228);
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding: 2%;
+        }
+
+        .paragraph-and-table {
+            display: flex;
+
+        }
+
+        .paragraph-and-table :nth-child(1) {
+            flex: 1;
+            font-weight: lighter;
+        }
+
+        .paragraph-and-table :nth-child(2) {
+            flex: 1;
+        }
+
+
+        .my-images {
+            flex-direction: center;
+            flex: 1;
+            padding-right: 10%;
+        }
+
+        @media(max-width: 800px) {
+            .historicplacescontainer {
+                flex-direction: column;
+
+            }
+
+        }
     </style>
 
 </head>
+
 <body>
 
-    <div class = "container" class = "clearfix">
- <header class = "header"> 
-         <h1 >Yeukai Loreen Muusha</h1>
-         <div >
-         <img src="./Webp.net-resizeimage.jpg", alt = "Photo Of Me At Table Mountain"> 
+    <div class="container">
+        <header class="header">
+            <h1>Yeukai <br> Loreen <br>Muusha</h1>
+
+            <div class="tablemountain">
+                <img src="Webp.net-resizeimage.jpg" , alt="Photo Of Me At Table Mountain">
+            </div>
+        </header>
+        <div class="content">
+
+
+            <div>
+                <h2 class="heading-paris">Paris! </h2>
+                <h3 class="heading-paris">The City I Would Like To Visit</h3>
+            </div>
+
+
+            <div class="section3">
+
+                <div class=my-images>
+                    <img src="paris.jpeg" , alt="A City I Would Love To Visit">
+
+                </div>
+              
+                    <p> I would absoutely love to visit Paris, it is the city of love. <br>
+                        It has been on my bucket-list for so long. My first stop will certainly be the Eiffel Tower!</p>
+                
+            </div>
         </div>
-     </header>
-     <div class = content>
-         <main>
-          
-            <section> 
-            <h2 class= "headings">Paris! </h2>
-             <div class = "section3">
-               
-        
-               
-                <h3 class= "heading1">The City I Would Like To Visit</h3>
-                <div class= my-images>
-                    <img src =  "./paris.jpeg", alt = "A City I Would Love To Visit">
-               
-               </div>
-                <p class = "p"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                     Rerum adipisci ipsa dolorem optio vero dolores inventore odio totamillum quae atque
-                      molestias neque, aspernatur ab. Earum explicabo commodi rem ratione.</p>
-            </section>
+        <div class="section2">
+            <h2 class="heading-paris"> French! </h2>
+            <h3 class="heading-paris">A Language I Would Love To Learn. </h3>
+            <div class="paragraph-and-table">
+                <p class="paragraphs"> Learning French would be the most sensible thing to do since I intend to tour Paris for a whole
+                    year!</p>
+
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>English Phrase</th>
+                            <th>French Phrase</th>
+                        </tr>
+                        <tr>
+                            <td>"Hi there!"</td>
+                            <td>"salut"</td>
+                        </tr>
+                        <tr>
+                            <td>"Nice to meet you!"</td>
+                            <td>"Ravi de vous rencontrer!"</td>
+                        </tr>
+                        <tr>
+                            <td>"You are so beutiful!"</td>
+                            <td>"Tu es si belle!"</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class = "section2">
-             <section>
-                <h2 class = "headings"> French!  </h2>
-                <h3 class = "headings">A Language I Would Love To Learn. </h3>
 
-                <p class = "paragraphs"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Rerum adipisci ipsa dolorem optio vero dolores inventore odio totamillum quae atque
-                     molestias neque, aspernatur ab. Earum explicabo commodi rem ratione.</p>
+        <h2>Historic Places In Cape Town</h2>
 
-            <div class =  "table">
-                <table>
-                    <tr>
-                        <th>English Phrase</th>
-                        <th>French Phrase</th>
-                    </tr>
-                    <tr>
-                        <td>"Hi there!"</td>
-                        <td>"salut"</td>
-                    </tr>
-                    <tr>
-                        <td>"Nice to meet you!"</td>
-                        <td>"Ravi de vous rencontrer!"</td>
-                    </tr>
-                    <tr>
-                        <td>"You are so beutiful!"</td>
-                        <td>"Tu es si belle!"</td>
-                    </tr>
-                    
-                </table>
+        <div class="historicplacescontainer">
 
-            </div>  
+            <div class="historic-section">
+                <h3>District Six Museum </h3>
+                <ul class = "list">
+                    <li> This museam gives a remembrance to the events of the apartheid era </li>
+                    <li>The ground floor is covered by a large street map of District Six.</li>
+                    <li>Its function as a museum serves as a memorial to the community</li>
+                </ul>
             
-            </section>
+                <div class="img">
+                    <img src="/home/loreen/projects/basic_website/district6.jpg" , alt="Me At Historic Place">
+
+                </div>
+            </div>
+            <div class="historic-section">
+                <h3>City Hall </h3>
+                <ul class = "list">
+                    <li> The building was designed as the result of a public competition </li>
+                    <li>The workmanship and materials are of high quality</li>
+                    <li>The tower of the City Hall has a Turret Clock which strikes the hours</li>
+                </ul>
+
+                <div class="img">
+                    <img src="/home/loreen/projects/basic_website/cityhall1.jpg" , alt="Me At Historic Place">
+
+                </div>
+            </div>
+            <div class="historic-section">
+                <h3>Parliament of RSA</h3>
+                <ul class = "list">
+                    <li>  The building consists of three main sections: the original building,<br> completed in 1884, and additions constructed in the 1920s and 1980s.  </li>
+                    <li>The original parliament building was designed in a Neoclassical style</li>
+                    <li>Queen Victoria granted permission for the establishment of a parliament in the Cape Colony in 1853</li>
+                </ul>
+                <div class="img">
+                    <img src="/home/loreen/projects/basic_website/Webp.net-resizeimage (5).jpg" , alt="Me At Historic Place">
+                </div>
+            </div>
+
+
         </div>
-           
-           <div class = "section1">
 
-            <h2 class ="headings"> Historic Places In Cape Town</h2>
-
-                <div class="historicplacescontainer">
-
-<div class historic-section>
-<h3>District Six Museum </h3>
-<p class = "paragraphs"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-     Rerum adipisci ipsa dolorem optio vero dolores inventore odio totamillum quae atque
-      molestias neque, aspernatur ab. Earum explicabo commodi rem ratione.</p>
-      <div class= "img">
-        <img src =  "/home/loreen/projects/basic_website/Webp.net-resizeimage (1).jpg", alt = "Me At Historic Place">
-    
     </div>
-</div>
-<div class historic-section>
-    <h3>City Hall </h3>
-    <p class = "paragraphs"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-         Rerum adipisci ipsa dolorem optio vero dolores inventore odio totamillum quae atque
-          molestias neque, aspernatur ab. Earum explicabo commodi rem ratione.</p>
-
-          <div class= "img">
-            <img src =  "/home/loreen/projects/basic_website/Webp.net-resizeimage (2).jpg", alt = "Me At Historic Place">
-        
-        </div>
     </div>
-    <div class historic-section>
-        <h3>Parliament of RSA</h3>
-        <p class = "paragraphs"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-             Rerum adipisci ipsa dolorem optio vero dolores inventore odio totamillum quae atque
-              molestias neque, aspernatur ab. Earum explicabo commodi rem ratione.</p>
-              <div class= "img">
-                <img src =   "/home/loreen/projects/basic_website/Webp.net-resizeimage (3).jpg", alt = "Me At Historic Place">
-            </div>
-            </div>
-
-               
-        </div>
-        </div>
-        </div>   
-
-           
-            </div>
-         </main>
-     </div>
-</div> 
 </body>
-<footer class="footer">yeukailoreen &copy; 2020</footer>
+
 </html>
