@@ -27,8 +27,21 @@ td, th {
   padding: 1em;
 }
 img{
-  border-radius: 5%;
-  display: flex;
+  
+  height: auto;
+  width : 300px;
+}
+.my-images{
+  height: 200px;
+  width : 300px;
+  overflow: hidden;
+
+}
+.historicplacescontainer{
+  display: grid;
+  
+column-gap: 2rem;
+
 }
 
 @media (min-width:600px) {
@@ -45,11 +58,17 @@ img{
 @media (min-width:600px) {
   .section3{
     display : grid;
-    grid-template-columns : 1fr 1fr;
+    grid-template-columns : 1fr 2fr;
     border: solid 3px lightpink;
    justify-items: center;
    padding-left: 20%;
    padding-right: 20%;
+  }
+  @media(min-width:800px){
+    .my-paris-paragraph{
+      padding-left: 2em;
+      
+    }
   }
   }
   @media (min-width:600px) {
@@ -72,7 +91,7 @@ img{
           display : grid;
           grid-template-columns : 1fr 1fr 1fr;
          /* margin: auto; */
-         padding: 3em;
+         /* column-gap: 2rem; */
         }
         }
         

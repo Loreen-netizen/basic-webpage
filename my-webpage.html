@@ -11,15 +11,15 @@
             font-weight: lighter;
             margin: auto;
             padding: 2%;
-         
-          
-           
+
+
+
         }
 
-        
+
         header {
             margin: auto;
-            border: 2px solid bisque;
+            border: 2px solid rgb(255, 220, 225);
             background-color: white;
             padding: 2em;
             display: flex;
@@ -40,24 +40,39 @@
         }
 
         img {
-            border-radius: 3%;
-            
+
+            height: auto;
+            width: 300px;
+        }
+
+        .my-images {
+            height: 200px;
+            width: 300px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: center;
+            flex: 1;
+            padding-right: 10%;
 
         }
 
-        table{
+        table {
             margin-top: 3%;
             border-collapse: collapse;
             width: 100%;
         }
-        
-        th,td, tr { 
+
+        th,
+        td,
+        tr {
             border: 1px solid rgb(160, 160, 155);
             text-align: center;
         }
 
 
-        p { margin: auto;
+        p {
+            margin: auto;
             padding: 5%;
             /* border: solid 1px beige; */
             font-size: 1em;
@@ -66,18 +81,20 @@
 
 
         }
-        .list{ margin: auto;
+
+        .list {
+            margin: auto;
             padding: 5%;
             /* border: solid 1px beige; */
-            font-size: 1em;}
+            font-size: 1em;
+        }
 
         .historicplacescontainer {
             display: flex;
             flex-direction: row;
-            align-content: space-around;
-        
+            justify-content: space-between;
+            padding: 2em;
         }
-        
 
         .section3 {
             display: flex;
@@ -87,7 +104,7 @@
         .section2 {
 
             margin-top: 8px;
-           
+
 
         }
 
@@ -109,34 +126,27 @@
         .paragraph-and-table :nth-child(1) {
             flex: 1;
             font-weight: lighter;
-            
+
         }
 
         .paragraph-and-table :nth-child(2) {
             flex: 1;
-            
-        }
 
-
-        .my-images {
-            flex-direction: center;
-            flex: 1;
-            padding-right: 10%;
         }
         @media(max-width: 800px) {
-        .section3 {
-            display: flex;
-            background-color: rgba(253, 253, 253, 0.356);
-            flex-direction: column;
+            .section3 {
+                display: flex;
+                background-color: rgba(253, 253, 253, 0.356);
+                flex-direction: column;
+            }
         }
-        }
-        
+
         @media(max-width: 800px) {
             .historicplacescontainer {
                 flex-direction: column;
 
             }
-            
+
 
         }
     </style>
@@ -168,17 +178,18 @@
                     <img src="./finalpics/paris.jpeg" , alt="A City I Would Love To Visit">
 
                 </div>
-              
-                    <p> I would absoutely love to visit Paris, it is the city of love. <br>
-                        It has been on my bucket-list for so long. My first stop will certainly be the Eiffel Tower!</p>
-                
+
+                <p> I would absoutely love to visit Paris, it is the city of love. <br>
+                    It has been on my bucket-list for so long. My first stop will certainly be the Eiffel Tower!</p>
+
             </div>
         </div>
         <div class="section2">
             <h2 class="heading-paris"> French! </h2>
             <h3 class="heading-paris">A Language I Would Love To Learn. </h3>
             <div class="paragraph-and-table">
-                <p class="paragraphs"> Learning French would be the most sensible thing to do since I intend to tour Paris for a whole
+                <p class="paragraphs"> Learning French would be the most sensible thing to do since I intend to tour
+                    Paris for a whole
                     year!</p>
 
                 <div class="table">
@@ -213,46 +224,46 @@
                 <h3>District Six Museum </h3>
                 <img src="./finalpics/district6.jpg" , alt="Me At Historic Place">
 
-                <ul class = "list">
+                <ul class="list">
                     <li> This museam gives a remembrance to the events of the apartheid era </li>
                     <li>The ground floor is covered by a large street map of District Six.</li>
                     <li>Its function as a museum serves as a memorial to the community</li>
                 </ul>
-            
-               
-                   
-                
+
+
+
+
             </div>
             <div class="historic-section">
                 <h3>Castle Of Good Hope</h3>
-                
-                <ul class = "list">
+
+                <ul class="list">
                     <li> The Castle is the oldest existing building in South Africa. </li>
                     <li>The fortress housed a church, bakery, various workshops, <br>
                         living quarters, shops, and cells, among other facilities.</li>
                     <li>The Castle acted as local headquarters for the South African Army in the Western Cape</li>
                 </ul>
-                <img src="./finalpics/castleofgoodhope.2jpg", alt="Me At Historic Place">
-                
-                   
-                
+                <img src="./finalpics/castleofgoodhope.2jpg" , alt="Me At Historic Place">
+
+
+
             </div>
             <div class="historic-section">
                 <h3>Iziko Slave Lodge </h3>
                 <img src="./finalpics/iziko.jpg" alt="Me At Historic Place">
-                <ul class = "list">
+                <ul class="list">
                     <li> The Slave Lodge is a South African social history museum located in Cape Town.</li>
                     <li>The Slave Lodge is one of the oldest buildings in Cape Town and <br>
                         was previously known as the South African Cultural History Museum. </li>
                     <li>The lower level of this museum explores the long history of slavery in South Africa. </li>
                 </ul>
 
-               
-                 
 
-                
+
+
+
             </div>
-           
+
 
 
         </div>

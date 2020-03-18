@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mylandingpage</title>
+    <style>
+        h1{
+            font-family: ubuntu, 'Courier New', Courier, monospace;
+            color: black;
+            background-color: pink;
+            border: powderblue solid 2px;
+            padding-left: 30%;
+            font-weight: bolder;
+            font-size: 3em;
+
+
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        a{
+            color: deeppink;
+            font-size: medium;
+            text-transform: capitalize;
+            text-decoration: none;
+            padding-left: 10%;
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 4em;
+            margin: 1em;
+            
+        }
+        .links{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+        a:hover{
+            background-color: powderblue;
+        }
+        @media(min-width:600px){
+            header{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+  <h1>WELCOME TO MY LANDING PAGE</h1> 
+</header>
+  <div class = "links">
+  <a href=https://loreen-netizen.github.io/basic-webpage/my-webpage.html>my basic html web-page</a>
+  <a href=https://loreen-netizen.github.io/basic-webpage/my-webpage-grid.html>my CSS Grid web-page</a>
+</div>
+</html>
